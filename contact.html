@@ -49,56 +49,74 @@
 </section>
 <!-- END BANNER -->
 
-<!-- TEXT -->
-<section>
-  <div class="container-fluid">
-    <div class="row text-zone justify-content-center align-items-center">
-      <div class="col-sm-10 text-center">
-        <p>La couture, c'est tellement de choses à la fois : se faire des vêtements sur mesure, mais aussi coudre des accessoires, recycler des tissus, repriser, ajuster, réparer,...</p>
-        <p><u>C'est surtout prendre plaisir à faire une activité créative :)</u></p>
-      </div>
+L
+<!--CONTACT-->
+<section class="mb-4">
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contactez-moi</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Vous avez des questions particulières restées sans reponses après lecture du site ? Contactez-moi ici</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Votre nom</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Votre email</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Sujet</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Votre message</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Envoyer</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Clamart, 92140</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+ 33 74 74 74 74</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>contact@nevaperdlefil.com</p>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </section>
-
-<!-- ACTIVITIES -->
-<section>
-  <div class="container-fluid">
-    <div class="row text-center">
-          <div class="col-lg-4 col-md-7 col-sm-10 card border-dark mx-auto mb-5">
-            <div class="card-header border border-dark background-white m-2 ">
-                <h5 class="display-6" style="color:#1E8EDB">Ateliers de coutures</h5>
-            </div>
-            <img src="./images/malice.jpg" class="card-img-top" alt="...">
-            <div class="card-body mx-auto">
-              <h5 class="card-title" style="color:#1E8EDB ; text-decoration: underline #1E8EDB">Cours collectifs à l'atelier Malice à Clamart</h5>
-              <p class="card-text">Vous avez envie d'apprendre à plusieurs, dans un atelier qui comporte déjà des machines à coudre ? Les cours auront lieu le dimanche soir. Quoi de mieux pour finir le week end ?</p>
-            </div>
-            <div class="card-footer background-white border-white ">
-              <a href="./cours.html#ateliers" class="btn button-color2">En savoir plus</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-7 col-sm-10 card border-dark mx-auto mb-5">
-            <div class="card-header border border-dark background-white m-2 ">
-                <h5 class="display-6" style="color:#1E8EDB">Cours particuliers</h5>
-            </div>
-            <img src="./images/machine.jpg" class="card-img-top" alt="...">
-            <div class="card-body mx-auto">
-              <h5 class="card-title" style="color:#1E8EDB ; text-decoration: underline #1E8EDB">Cours particuliers à domicile à Clamart et environs</h5>
-              <p class="card-text">Vous avez un projet ou vous voulez apprendre davantage sur la couture mais ne souhaitez pas rejoindre les cours collectifs ou vous ne souhaitez pas vous déplacez ?</p>
-            </div>
-            <div class="card-footer background-white border-white ">
-              <a href="./cours.html#cours" class="btn button-color2">En savoir plus</a>
-            </div>
-          </div>
-      </div>
-    </div>
-</section>
-
-
-
-<!-- END ACTIVITIES -->
+<!--CONTACT-->
 
 
 <!-- FOOTER -->
